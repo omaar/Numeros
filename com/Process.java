@@ -15,7 +15,13 @@ public class Process {
     this.n = n;
   }
 
-  public int result(int n){
-    return (n > 21)?n *= n:n - 21;
+  public int result(){
+    return (getN() > 21)?n *= n:n - 21;
   }
+
+  public void setAll(int n){
+    System.out.println("Ingresa un numero: ");
+    setN(n);
+  }
+
 }
